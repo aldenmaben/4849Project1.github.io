@@ -1,0 +1,76 @@
+<!doctype html>
+  <head>
+    <title>Alden's Converter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css"
+
+  </head>
+  <body>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" id="home">Conversions Website</a>
+    <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" id=temp>Temperature (F->C)<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id=dist>Distance (M->KM)</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div id ="Temp_conversion">
+ <div class="jumbotron">
+   <h2 class="display-4">Fahrenheit to Celsius Converter</h2>
+    <p class="lead">This is a simple converter that takes in degrees in farenheit and converts it into celsius</p>
+   <hr class="my-4">
+     <form class="form-inline">
+     <div class="input-group">
+       <div class="input-group-prepend">
+         <input type="text" id = "far" class="form-control" placeholder="Ex: 32º" aria-label="Ex: 32º" aria-describedby="basic-addon1" value="" onkeydown="if (event.keyCode == 13) calcTemp()"/>
+         <span class="input-group-text" id="basic-addon1">Fº</span> &nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="text" id = "cel" class="form-control" placeholder="Result:" aria-label="Result" aria-describedby="basic-addon1" value="" disabled/>
+         <span class="input-group-text" id="basic-addon1">Cº</span>
+       </div>
+     </div>
+     </form>
+     <br>
+    <a class="btn btn-info" href="#" role="button" onclick="calcTemp()" onkeydown="if (event.keyCode == 13) calcTemp()">Convert!</a>
+  </hr>
+ </div>
+</div>
+
+<div id ="Dist_conversion">
+ <div class="jumbotron">
+   <h2 class="display-4">Miles to Kilometers Converter</h2>
+    <p class="lead">This is a simple converter that takes in miles and converts it to kilometers</p>
+   <hr class="my-4">
+     <form class="form-inline">
+     <div class="input-group">
+       <div class="input-group-prepend">
+         <input type="text" id = "mil" class="form-control" placeholder="Ex: 2 miles" aria-label="Ex: 2 miles" aria-describedby="basic-addon1" value="" onkeydown="if (event.keyCode == 13) calcDist()">
+         <span class="input-group-text" id="basic-addon1">Miles</span> &nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="text" id = "kil" class="form-control" placeholder="Result:" aria-label="Result" aria-describedby="basic-addon1" value="" disabled>
+         <span class="input-group-text" id="basic-addon1">Kilometers</span>
+       </div>
+     </div>
+     </form>
+     <br>
+    <a class="btn btn-info" href="#" role="button" onclick="calcDist()" onkeydown="if (event.keyCode == 13) calcDist()">Convert!</a>
+  </hr>
+ </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="project.js"></script>
+  </body>
+</html>
