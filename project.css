@@ -3,6 +3,7 @@
 }
 #Temp_conversion{
   background-color: inherit;
+
 }
 #buttonTest1{
   background: green
@@ -10,4 +11,7 @@
 }
 #buttonTest2{
   background: orange
+}
+body{
+  background-color: #1D386E
 }
